@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- FIN DE COMPRA -->
+    <div id="datos">
+        <h1>Hora de terminar tu compra!</h1>
+        <form action="">
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="Nombre" id="nombre">
+            <label for="Email">Email</label>
+            <input type="email" name="Email" id="mail">
+            <label for="Edad">Edad</label>
+            <input type="number" name="Edad" id="edad">
+            <button type="submit" id="enviar">Enviar Pedido</button>
+        </form>
+    </div>
+    <!-- HEADER Y MENU -->
+    <div class="contenedorIntro">
+        <header class="header">
+            <img src="./media/Logo.PNG" alt="logoHeader">
+        </header>
+        <h1>Todo lo que tenemos para ti:</h1>
+        <div class="contenedorBtn">
+            <button id="btnRaquetas" class="button type1">Raquetas</button>
+            <button id="btnCuerdas" class="button type1">Cuerdas</button>
+            <button id="btnGrips" class="button type1">Grips</button>
+            <button id="btnTodo" class="button type1">Todos</button>
+        </div>
+    </div>
+    <!-- APP -->
+
+    <div id="app"></div>
+    <div id="carrito">
+        <h2>Productos agregados:</h2>
+        <div id="productos">
+            <p>Foto:</p>
+            <p>Nombre:</p>
+            <p>Precio:</p>
+        </div>
+        <button id="comprar">Comprar</button>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="footerContenedor">
+            <img class="imgFooter" src="media/logo.PNG" alt="logoFooter">
+            <p>Estamos a tu servicio</p>
+            <ul class="redesSociales">
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <!-- SWEET ALERT -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- CUSTOM JS -->
+    <script src="./app.js"></script>
+</body>
+</html>

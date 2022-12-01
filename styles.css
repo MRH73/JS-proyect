@@ -1,0 +1,318 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-bottom: 2%;
+    padding: 2% 0%;
+    z-index: 100;
+}
+
+.contenedorIntro h1{
+    color: white;
+}
+
+.header p{
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-size: 300%;
+    margin-left: 0%;
+}
+
+.header i{
+    background-color: transparent;
+    font-size: 250%;
+    padding: 0.25%;
+    color: white;
+
+}
+
+#btnCarrito{
+    background-color: transparent;
+    border: none;
+}
+
+.header i:hover{
+    color: #14244A;
+}
+
+.header img{
+    width: 10%;
+    border: solid 4px #14244A;
+}
+
+/* BOTONES */
+
+.contenedorBtn{
+    display: flex;
+    padding: 0% 15%;
+    width: 100%;
+    height: auto;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.contenedorIntro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 495px;
+    width: 100%;
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    padding: 3%;
+    text-align: center;
+    background-image: url(./media/fondoIntro.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.button{
+    width: 15%;
+    position:relative;
+    padding:1em 1.5em;
+    border:none;
+    background-color:transparent;
+    cursor:pointer;
+    outline:0;
+    font-size:18px;
+    margin: 2% auto;
+    font-family: 'Roboto Mono', monospace;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(22,0,77,1) 78%);
+    color:#fff;
+    z-index: 0;
+}
+
+.button.type1.type1::after,.button.type1.type1::before{
+    content:"";
+    position:absolute;
+    width:20%;height:20%;
+    border:3px solid;
+    transition:all .6s ease;
+    border-radius:2px;
+    z-index: 0;
+}
+
+.button.type1.type1::after{
+    bottom:0;
+    right:0;
+    border-color:transparent rgba(22,0,77,1) rgba(22,0,77,1) transparent;
+    z-index: 0;
+}
+
+.button.type1.type1::before{
+    top:0;
+    left:0;
+    border-color:rgba(22,0,77,1) transparent transparent rgba(22,0,77,1);
+}
+
+.button.type1.type1:hover:after,.button.type1.type1:hover:before{
+    width:100%;
+    height:100%;
+    z-index: 0;
+}
+
+/* PRODUCTOS */
+
+
+/* FOOTER */
+footer{
+    background-color: #111;
+    height: auto;
+    width: 100%;
+    padding-top: 20px;
+    color: white;
+}
+
+
+.footerContenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+}
+
+.imgFooter{
+    width: 10%;
+    margin-bottom: 2%;
+}
+
+.footerContenedor p{
+    margin: 10px auto;
+    line-height: 20px;
+    font-size: 140%;
+    font-family: 'Anton', sans-serif;
+    background-color: black;
+}
+
+.redesSociales{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px 30px 0px;
+    padding-left: 0px;
+    background-color: black;
+}
+
+.redesSociales li{
+    margin: 0% 30px;
+}
+
+.redesSociales li a{
+    text-decoration: none;
+    color: white;
+}
+
+.redesSociales li a:hover i{
+    color: rgba(22,0,77,1);
+}
+
+.redesSociales li a i{
+    font-size: 130%;
+    background-color: black;
+}
+
+/* APP */
+
+#app{
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+
+/* CARRITO HOVER */
+
+
+/* CARDS */
+
+.cardsR{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 50%;
+    margin: 5%;
+    background-color: white;
+    padding: 3%;
+    border: solid 2px black;
+}
+
+.cardsC{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 50%;
+    margin: 5%;
+    background-color: white;
+    padding: 3%;
+    border: solid 2px black;
+}
+
+.cardsG{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 50%;
+    margin: 5%;
+    background-color: white;
+    padding: 3%;
+    border: solid 2px black;
+}
+
+.imgProductos{
+    width: 40%;
+}
+
+/* CARRITO */
+
+#carrito{
+    width: 100%;
+    margin: 3% auto;
+}
+
+#carrito h2{
+    text-align: center;
+}
+
+#productos{ 
+    margin-top: 2%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+
+}
+#productos img{
+    margin: auto;
+    width: 10%;
+}
+
+#carrito button{
+    display: block;
+    width: 10%;
+    margin: 3% auto;
+}
+
+#datos{
+    display: none;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(22,0,77,1) 78%);
+    z-index: 300;
+    margin: 0%;
+    padding: 0%;
+}
+
+#datos h1{
+    text-align: center;
+    margin-top: 2%;
+    color: white;
+}
+
+#datos form{
+    margin: 2% 30%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#datos form label{
+    margin: 3% 0%;
+}
+
+#datos form input{
+    width: 60%;
+}
+
+#datos form button{
+    margin: 3% 0%;
+    padding: 1%;
+}
